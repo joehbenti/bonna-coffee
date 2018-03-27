@@ -19,6 +19,7 @@
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -27,6 +28,14 @@
     .no-js .owl-carousel,
     .owl-carousel.owl-loaded {
       display: initial;
+    }
+
+    .history .item img {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      background-size: cover;
     }
   </style>
 
@@ -136,16 +145,65 @@
       </div>
     </section>
 
+    <section id="about" class="wow fadeInUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 about-img">
+            <!-- carousel slide here -->
+
+            <div class="owl-carousel history">
+              <div class="item">
+                <img src="img/history/slide 1.jpg" alt="">
+              </div>
+              <div class="item">
+                <img src="img/history/slide 2.jpg" height="" alt="">
+              </div>
+              <div class="item">
+                <img src="img/history/slide14.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2>A little About
+              <span>Bonna</span>
+            </h2>
+            <h3>in Sidama region, Ethiopia</h3>
+
+            <p></p>
+
+            <ul>
+              <li>
+                <i class="ion-android-checkmark-circle"></i> Coffee is a major cash crop in the region.</li>
+              <li>
+                <i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li>
+                <i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section id="call-to-action" class="wow fadeInUp">
       <div class="container">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-              sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3 class="cta-title">Work With Us</h3>
+            <p class="cta-text"> We are
+              <strong>NOT</strong> just into making your day blissful and energetic, we also are an environment friendly and people
+              caring company. If you have a grand idea to make life a bit easier and fun. Come and work with us.
+              <br>
+              <br>
+              <i> Any Idea is welcome.</i>
+            </p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Work With US</a>
+            <a class="cta-btn align-middle scrollto" href="#contact">Contact Us</a>
           </div>
         </div>
 
@@ -194,7 +252,7 @@
       </div>
 
       <!-- Google Maps   -->
-<div id="google-map" data-latitude="8.949133" data-longitude="38.720548"></div>
+      <div id="google-map" data-latitude="8.949133" data-longitude="38.720548"></div>
 
       <div class="container">
         <div class="form">
@@ -270,6 +328,18 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
+  <script>
+    $(".history").owlCarousel({
+      items: 1,
+      autoPlay: 3000,
+      paginationSpeed: 1000,
+      itemsDesktop: true,
+      itemsDesktopSmall: false,
+      itemsTablet: false,
+      itemsMobile: false,
+    });
+  </script>
 
 </body>
 
