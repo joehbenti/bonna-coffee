@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .intro-content {
   position: absolute;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   top: 0;
   left: 0;
@@ -276,8 +276,8 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
+  /* -webkit-transition-property: opacity;
+  transition-property: opacity; */
 }
 
 /*--------------------------------------------------------------
@@ -1099,13 +1099,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .credits a {
   color: #0c2e8a;
 }
-
-
-/* joe edits */
-
- .no-js .owl-carousel,
- .owl-carousel.owl-loaded {
-   display: initial;
- }
-
  
+
+ /* joe edit */
+
+ #intro-carousel .owl-stage-outer {
+   z-index: 20;
+ }
