@@ -41,7 +41,6 @@
     #intro-carousel .item {
       opacity: 1;
     }
-    
   </style>
 
 </head>
@@ -156,23 +155,30 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 content">
-            <h2>A little About
+            <h2>Facts about
               <span>Bonna</span>
             </h2>
             <h3>in Sidama region, Ethiopia</h3>
-          
+
             <p></p>
-          
+
             <ul>
               <li>
-                <i class="ion-android-checkmark-circle"></i> Coffee is a major cash crop in the region.</li>
+                <i class="ion-android-checkmark-circle"></i> is the major cash crop in the region</li>
               <li>
-                <i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <i class="ion-android-checkmark-circle"></i>It became one of the major coffee producing regions in Ethiopia.</li>
               <li>
-                <i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta
-                storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <i class="ion-android-checkmark-circle"></i>It supplies over 40% of washed coffee to the central market.
+              </li>
+              <li>
+                <i class="ion-android-checkmark-circle"></i>Sidama Zone is the leading coffee producing zone in Ethiopia, which contributes greatly to the foreign
+                exchange of the federal government.
+              </li>
+              <li>
+                <i class="ion-android-checkmark-circle"></i>Most coffee producing farmers use natural fertilizers and not artificial fertilizer.
+              </li>
             </ul>
-          
+
           </div>
           <div class="col-lg-6 about-img owl-wrapper">
             <!-- carousel slide here -->
@@ -187,15 +193,7 @@
               <img class="owl-item" src="img/history/slide14.jpg" alt="">
               <!-- </img> -->
             </div>
-            </div>
-
-            
-
-            
-
-          
-
-
+          </div>
         </div>
 
       </div>
@@ -270,32 +268,41 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+
+          <form action="mail.php" method="post" role="form" class="contactForm">
             <div class="form-row">
+
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
                 />
                 <div class="validation"></div>
               </div>
+
               <div class="form-group col-md-6">
                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email"
                 />
                 <div class="validation"></div>
               </div>
+
             </div>
+
             <div class="form-group">
               <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject"
               />
               <div class="validation"></div>
             </div>
+
             <div class="form-group">
               <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validation"></div>
             </div>
+            
             <div class="text-center">
-              <button type="submit">Send Message</button>
+              <button name="submit" type="submit">Send Message</button>
             </div>
+            
           </form>
+
         </div>
 
       </div>
@@ -352,6 +359,30 @@
       itemsMobile: true,
     });
   </script>
+  
+<!-- 
+    <script type = "text/javascript" >
+      $.ajax({
+        type: "POST",
+        url: "https://mandrillapp.com/api/1.0/messages/send.json",
+        data: {
+          'key': 'XXXXXXXXXXXXXXX',
+          'message': {
+            'from_email': 'your mail id',
+            'to': [{
+              'email': 'receiver mail id',
+              'name': 'Name',
+              'type': 'to'
+            }],
+            'autotext': 'true',
+            'subject': 'YOUR SUBJECT HERE!',
+            'html': 'Body'
+          }
+        }
+      }).done(function (response) {
+        console.log(response);
+      });
+  </script> -->
 
 </body>
 
