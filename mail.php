@@ -14,6 +14,8 @@ $email_body = "Name: $name\n\nEmail: $email_address\n\nSubject:\n$email_subject\
 $headers = "From: $email_address\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
-return true;         
+return true;   
+
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
 	}
 ?>
